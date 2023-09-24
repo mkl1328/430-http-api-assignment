@@ -27,10 +27,10 @@
 
       if(contentType === 'application/json') {
         const parsedResponse = JSON.parse(resText);
-        content.innerHTML += `<p>${parsedResponse.message}</p>`;
+        content.innerHTML += `<p>Message: ${parsedResponse.message}</p>`;
       } else if (contentType === 'text/xml') {
         const parsedResponse = new window.DOMParser().parseFromString(resText, 'text/xml');
-        content.innerHTML += `<p>${parsedResponse.querySelector('message').textContent}</p>`;
+        content.innerHTML += `<p>Message: ${parsedResponse.querySelector('message').textContent}</p>`;
       }
     
     }

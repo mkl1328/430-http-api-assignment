@@ -133,7 +133,7 @@ const internalServerError = (request, response, acceptedTypes) => {
 
 const notImplemented = (request, response, acceptedTypes) => {
   const responseJSON = {
-    message: 'A get request fofr this page has not been implemented yet. Check again later for updated content.',
+    message: 'A get request for this page has not been implemented yet. Check again later for updated content.',
     id: 'notImplemented',
   };
 
